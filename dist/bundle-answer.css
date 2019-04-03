@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding-top: 0.1px;
+}
+
+body {
+  overflow: hidden;
+  background-color: green;
+}
+
+.main {
+  height: 96vh;
+  margin: 2vh;
+  background-color: #000000;
+}
+
+.header {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Avenir Next";
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.abs-center {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.fab {
+  margin-top: 2rem;
+}
+
+.input {
+  outline: none;
+  min-width: 1ch;
+  max-width: 80vw;
+  font-size: 10vh;
+  text-align: start;
+  font-weight: bold;
+  border: transparent;
+  background-color: transparent;
+  font-family: "PT Mono", monospace;
+  border-bottom: 12px solid green;
+  color: green;
+}

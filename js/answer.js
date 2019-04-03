@@ -1,5 +1,5 @@
-import VueMDCAdapter from 'vue-mdc-adapter'
-Vue.use(VueMDCAdapter);
+// import VueMDCAdapter from 'vue-mdc-adapter'
+// Vue.use(VueMDCAdapter);
 
 var app = new Vue({
   el: '#app',

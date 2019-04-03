@@ -1,26 +1,27 @@
-function getStyleUse(bundleFilename) {
+function getStyleUse (bundleFilename) {
   return [
     {
       loader: 'file-loader',
-      options: {
+      query: {
         name: bundleFilename,
       },
     },
-    { loader: 'extract-loader' },
-    { loader: 'css-loader' },
+    {loader: 'extract-loader'},
+    {loader: 'css-loader'},
     {
       loader: 'sass-loader',
-      options: {
+      query: {
         includePaths: ['./node_modules'],
         implementation: require('dart-sass'),
         fiber: require('fibers'),
-  }
+      }
     },
   ];
 }
 
 module.exports = [
   {
+    mode: 'production',
     entry: './scss/answer.scss',
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
@@ -34,12 +35,13 @@ module.exports = [
     },
   },
   {
+    mode: 'production',
     entry: "./js/answer.js",
     output: {
       filename: "bundle-answer.js"
     },
     module: {
-      loaders: [{
+      rules: [{
         test: /answer.js$/,
         loader: 'babel-loader',
         query: {presets: ['env']}
