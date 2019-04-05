@@ -1,6 +1,8 @@
 # shoukai
 
-> A Vue.js project
+> shoukai desu
+
+imi wakannai
 
 ## Build Setup
 
