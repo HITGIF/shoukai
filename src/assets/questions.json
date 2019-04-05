@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "title": "Lorem ipsum dolar",
+      "foot": "press enter",
+      "answerType": 0
+    },
+    {
+      "id": 1,
+      "title": "Wo ist das baterzimer",
+      "foot": "",
+      "answerType": 1,
+      "options": [
+        {
+          "id": 1,
+          "text": "habe"
+        },
+        {
+          "id": 2,
+          "text": "haben nicht"
+        }
+      ]
+    }
+  ]
+}
